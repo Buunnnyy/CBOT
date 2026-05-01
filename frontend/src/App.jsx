@@ -4,7 +4,7 @@ import { Upload, Send, FileText, MessageCircle, Sparkles, User, Bot, Loader2, Ar
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 
 function formatBytes(bytes) {
   if (bytes === 0) return '0 B';
